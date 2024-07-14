@@ -1,0 +1,76 @@
+/*---------------------header---------------------*/
+#header_box {
+    width: 100%;
+    height: auto;
+    background: navy;
+}
+
+#header_logo {
+    text-align: center;
+}
+
+#bitbyte_logo {
+    width: 50px;
+    height: 50px;
+}
+/*---------------------sidebar--------------------*/
+#sidebar {
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#sidebar_header {
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+}
+#sidebar_contents {
+}
+
+#sidebar_contents_list {
+    list-style: none;
+}
+
+#sidebar_topline {
+    border: 1px solid lightgray;
+    margin: 0 10px;
+}
+
+#sidebar_bottomline {
+    border: 1px solid lightgray;
+    margin: 0 10px;
+}
+
+#sidebar_footer_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#sidebar_footer_list li {
+}
+
+#sidebar_footer_list img {
+    margin: 5px;
+}
+
+#sidebar_footer_list a {
+}
+
+/*----------------------main----------------------*/
+#main {
+    display: flex;
+}
+
+#content {
+    width: 100%;
+    height: 10vh;
+}
+
+#content_footer_box {
+    display: flex;
+    flex-direction: column;
+}
