@@ -47,9 +47,9 @@ body{
     height: 90vh;
     margin-top: 1em;
     margin-right: 5em;
-    border-bottom: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    border-top: 2px solid lightgray;
+    border-right: 2px solid lightgray;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -69,7 +69,6 @@ body{
     font-size: medium;
     font-weight: bold;
     padding-top: 20px;
-
 }
 
 #userStatement {
@@ -90,6 +89,7 @@ body{
 }
 
 #sidebar_contents_list img {
+    width: 20px;
     margin-right: 5px;
 }
 
@@ -98,9 +98,14 @@ body{
     text-decoration: none;
 }
 
+#sidebar_contents_list a:hover {
+    font-weight: bold;
+    color: navy;
+}
+
 ul, li {
     margin-top: 1.2em;
-    margin-left: 1.2em;
+    margin-left: 1.5em;
     padding: 0;
 }
 
@@ -124,7 +129,7 @@ ul, li {
     flex-direction: column;
     list-style: none;
     margin-top: 1.2em;
-    margin-left: 1.2em;
+    margin-left: 1.5em;
     padding: 0;
 }
 
@@ -137,6 +142,11 @@ ul, li {
     text-decoration: none;
 }
 
+#sidebar_footer_list a:hover {
+    font-weight: bold;
+    color: navy;
+}
+
 #sidebar_fold {
     position : relative;
     left: -15px;
@@ -147,6 +157,9 @@ ul, li {
     border: none;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    border: 2cap solid lightgray;
+    border-radius: 10px;
+
 }
 
 #sidebar_fold img {
@@ -188,11 +201,12 @@ ul, li {
     font-size: small;
 }
 
-
 #footer_about_a {
     color: black;
 }
 
 #footer_copyright {
-    margin: auto;
+    text-align: end;
+    font-size: small;
 }
+
