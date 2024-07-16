@@ -34,7 +34,7 @@ aside{
     width: 242px;
     height: 686px;
     border-radius: 15px;
-    box-shadow: 3px 0 3px #cdcdcd;
+    border-right: 1px solid #cdcdcd;
     background-color: white;
     position: absolute;
     left: 0;
