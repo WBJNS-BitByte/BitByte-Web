@@ -58,6 +58,11 @@ aside a {
     align-items: center;
 }
 
+aside .side-img {
+    width: 28px;
+    height: 28px;
+}
+
 #profile {
     height: 65px;
     padding: 20px 0;
@@ -95,7 +100,7 @@ aside ul{
 aside li {
     display: flex;
     align-items: center;
-    margin: 25px;
+    margin: 20px;
 }
 
 li p {
