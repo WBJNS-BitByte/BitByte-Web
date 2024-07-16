@@ -14,12 +14,20 @@ nav{
 }
 
 .content-background{
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .content-container {
     width: 880px;
+}
+
+@media screen and (min-width: 1440px){
+    .content-container {
+        width: 61.1%;
+    }
 }
 
 aside{
@@ -27,7 +35,10 @@ aside{
     height: 686px;
     border-radius: 15px;
     box-shadow: 3px 0 3px #cdcdcd;
-    float: left;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
 }
 
 aside div {
@@ -117,6 +128,7 @@ footer {
     display: flex;
     justify-content: end;
     align-items: end;
+    z-index: 500;
 }
 
 footer ul {
