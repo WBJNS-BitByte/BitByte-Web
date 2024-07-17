@@ -1,66 +1,111 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BITBYTE - 독서실 예약 사이트</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <title>standard</title>
+    <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/dropdown.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/bit1.jpg" alt="BITBYTE 로고">
-                </a>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reservation">이용예약</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#status">이용 현황</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#history">예약 내역</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#community">지난 예약</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#mypage">
-                    <img src="images/bitlogin1.jpg" alt="마이페이지" class="profile-icon">
-                </a>
-            </div>
-        </nav>
-    </header>
-    
-    <!-- main content-->
-    <main class="container my-5">
-      <div class="row text-center">
-          <div class="col-12 col-md-6 mb-4">
-              <button class="btn btn-lg btn-block stylish-btn" style="width: 100%; height: 300px;" onclick="location.href='five.html'">5층</button>
-          </div>
-          <div class="col-12 col-md-6 mb-4">
-              <button class="btn btn-lg btn-block stylish-btn" style="width: 100%; height: 300px;" onclick="location.href='seven.html'">7층</button>
-          </div>
-      </div>
-  </main>
-
-    <footer>
-        <a href="#about" class="footer-link">비트바이트에 대해 궁금하신가요?</a>
-        <div class="footer-info">
-            <p>&copy; 2024 BITBYTE. All rights reserved.</p>
-            <p>WNBJS@gmail.com</p>
-            <p>비트캠프 TEL. 02-123-1234</p>
+    <nav>
+        <img src="images/bitbyte nav 로고 white.png" alt="bitbyte 로고">
+    </nav>
+    <aside>
+        <div id="profile">
+            <a href=""><img src="images/bitbype logo cookie.png" alt="기본 프로필 사진"></a>
+            <a class="side-letter" href=""><p><span>코딩천재용현</span><br>데브옵스 12기</p></a>
+            <div id="side-click"><img src="images/사이드바닫힘.png" alt="사이드바닫힘"></div>
         </div>
-    </footer>
+        <div id="side-buttons">
+            <div id="menus">
+                <ul>
+                    <li>
+                        <a class="side-img" href="#" data-image="images/실시간현황-아이콘.svg" data-hover-image="images/실시간현황-아이콘-호버.svg">
+                            <img src="images/실시간현황-아이콘.svg" alt="실시간현황">
+                        </a>
+                        <a class="side-letter" href="#"><p>실시간현황</p></a>
+                    </li>
+                    <li>
+                        <a class="side-img" href="#" data-image="images/시설예약-아이콘.svg" data-hover-image="images/시설예약-아이콘-호버.svg">
+                            <img src="images/시설예약-아이콘.svg" alt="시설예약">
+                        </a>
+                        <a class="side-letter" href="#"><p>시설예약</p></a>
+                    </li>
+                    <li>
+                        <a class="side-img" href="#" data-image="images/예약내역-아이콘.svg" data-hover-image="images/예약내역-아이콘-호버.svg">
+                            <img src="images/예약내역-아이콘.svg" alt="예약내역">
+                        </a>
+                        <a class="side-letter" href="#"><p>예약내역</p></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="side-img" href="#" data-image="images/커뮤니티-아이콘.svg" data-hover-image="images/커뮤니티-아이콘-호버.svg">
+                            <img src="images/커뮤니티-아이콘.svg" alt="커뮤니티">
+                        </a>
+                        <a class="side-letter" href="#"><p>커뮤니티</p></a>
+                        <div class="dropdown-content">
+                            <a href="#">서브메뉴 1</a>
+                            <a href="#">서브메뉴 2</a>
+                            <a href="#">서브메뉴 3</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="side-img" href="#" data-image="images/마이페이지-아이콘.svg" data-hover-image="images/마이페이지-아이콘-호버.svg">
+                            <img src="images/마이페이지-아이콘.svg" alt="마이페이지">
+                        </a>
+                        <a class="side-letter" href="#"><p>마이페이지</p></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logout">
+                <a class="side-img" href=""><img src="images/로그아웃-아이콘.svg" alt="로그아웃"></a>
+                <a class="side-letter" href=""><p style="color:#FF0A00">로그아웃</p></a>
+            </div>
+        </div>
+    </aside>
+    <div class="content-background">
+        <div class="content-container">
+            <main>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+1h/UFI0+3EG5W5lw5k8vgy1IjE2o" crossorigin="anonymous"></script>
+            </main>
+            <footer>
+                <ul>
+                    <li style="text-decoration: underline;">비트바이트에 대해 궁금하신가요?</li>
+                    <li>WBJNS@gmail.com<br>
+                        2024 비트바이트. All rights reserved.</li>
+                    <li>비트캠프 Tel. 02-123-1234</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const sideClick = document.querySelector("#side-click");
+        const sidebar = document.querySelector("aside");
+
+        sideClick.addEventListener("click", () => {
+            sidebar.classList.toggle("fold");
+            
+            if (document.querySelector(".fold") === null) {
+                sidebar.style.width = "242px";
+                sideClick.innerHTML = '<img src="images/사이드바닫힘.png" alt="사이드바닫힘">';
+            } else {
+                sidebar.style.width = "92px";
+                sideClick.innerHTML = '<img src="images/사이드바열림.png" alt="사이드바열림">';
+            }
+        });
+
+        // 메뉴 아이콘 호버 효과
+        const sideButtons = document.querySelectorAll('#side-buttons li');
+        sideButtons.forEach(button => {
+            const originalImage = button.querySelector('img').src;
+            const hoverImage = button.querySelector('a.side-img').getAttribute('data-hover-image');
+            button.addEventListener('mouseenter', () => {
+                button.querySelector('img').src = hoverImage;
+            });
+            button.addEventListener('mouseleave', () => {
+                button.querySelector('img').src = originalImage;
+            });
+        });
+    </script>
 </body>
 </html>
