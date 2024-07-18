@@ -66,9 +66,9 @@
                 </div>
             </div>
         </aside>
-        <button id="sidebar_fold" data-bs-toggle="tooltip" data-bs-placement="top"
-        data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="<div style='background: white;'>닫기</div>">
-            <img src="../images/sidebar_fold_icon.svg"  alt="sidebar_fold_icon">
+        <button id="sidebar_fold" class="btn btn-success" data-bs-toggle="tooltip" 
+        data-bs-custom-class="tooltip-success" data-bs-placement="top"
+        data-bs-html="true" data-bs-title="<div style='background: white;'>닫기</div>"></button>
         </button>
         <div id="content_footer_box">
             <content id="content">
@@ -91,9 +91,8 @@
         </div>
     </main>
     <script>
-        $(function () {
-            $('[data-bs-toggle="tooltip"]').tooltip()
-        });
+        new bootstrap.Tooltip(document.querySelector('[data-bs-toggle="tooltip"]'));
+        // initialize tooltip
     </script>
 </body>
 </html>

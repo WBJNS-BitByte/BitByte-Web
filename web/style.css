@@ -209,4 +209,7 @@ ul, li {
     text-align: end;
     font-size: small;
 }
-
+.tooltip-success {
+    --bs-success: #343D87; /* 원하는 색상 코드 */
+    --bs-tooltip-bg: var(--bs-success);
+}
