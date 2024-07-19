@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>standard</title>
     <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/dropdown.css">
 </head>
 <body>
     <nav>
@@ -13,36 +14,51 @@
     <aside>
         <div id="profile">
             <a href=""><img src="images/bitbype logo cookie.png" alt="기본 프로필 사진"></a>
-            <a class="side-letter" href=""><p><span>dechung1004</span><br>데브옵스 12기</p></a>
+            <a class="side-letter" href=""><p><span>코딩천재용현</span><br>데브옵스 12기</p></a>
             <div id="side-click"><img src="images/사이드바닫힘.png" alt="사이드바닫힘"></div>
         </div>
         <div id="side-buttons">
             <div id="menus">
                 <ul>
                     <li>
-                        <a class="side-img" href=""><img src="images/실시간현황-아이콘.svg" alt="실시간현황"></a>
-                        <a class="side-letter" href=""><p>실시간현황</p></a>
+                        <a class="side-img" href="#" data-image="images/실시간현황-아이콘.svg" data-hover-image="images/실시간현황-아이콘-호버.svg">
+                            <img src="images/실시간현황-아이콘.svg" alt="실시간현황">
+                        </a>
+                        <a class="side-letter" href="#"><p>실시간현황</p></a>
                     </li>
                     <li>
-                        <a class="side-img" href=""><img src="images/시설예약-아이콘.svg" alt="시설예약"></a>
-                        <a class="side-letter" href=""><p>시설예약</p></a>
+                        <a class="side-img" href="#" data-image="images/시설예약-아이콘.svg" data-hover-image="images/시설예약-아이콘-호버.svg">
+                            <img src="images/시설예약-아이콘.svg" alt="시설예약">
+                        </a>
+                        <a class="side-letter" href="#"><p>시설예약</p></a>
                     </li>
                     <li>
-                        <a class="side-img" href=""><img src="images/예약내역-아이콘.svg" alt="예약내역"></a>
-                        <a class="side-letter" href=""><p>예약내역</p></a>
+                        <a class="side-img" href="#" data-image="images/예약내역-아이콘.svg" data-hover-image="images/예약내역-아이콘-호버.svg">
+                            <img src="images/예약내역-아이콘.svg" alt="예약내역">
+                        </a>
+                        <a class="side-letter" href="#"><p>예약내역</p></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="side-img" href="#" data-image="images/커뮤니티-아이콘.svg" data-hover-image="images/커뮤니티-아이콘-호버.svg">
+                            <img src="images/커뮤니티-아이콘.svg" alt="커뮤니티">
+                        </a>
+                        <a class="side-letter" href="#"><p>커뮤니티</p></a>
+                        <div class="dropdown-content">
+                            <a href="#">서브메뉴 1</a>
+                            <a href="#">서브메뉴 2</a>
+                            <a href="#">서브메뉴 3</a>
+                        </div>
                     </li>
                     <li>
-                        <a class="side-img" href=""><img src="images/커뮤니티-아이콘.svg" alt="커뮤니티"></a>
-                        <a class="side-letter" href=""><p>커뮤니티</p></a>
-                    </li>
-                    <li>
-                        <a class="side-img" href=""><img src="images/마이페이지-아이콘.svg" alt="마이페이지"></a>
-                        <a class="side-letter" href=""><p>마이페이지</p></a>
+                        <a class="side-img" href="#" data-image="images/마이페이지-아이콘.svg" data-hover-image="images/마이페이지-아이콘-호버.svg">
+                            <img src="images/마이페이지-아이콘.svg" alt="마이페이지">
+                        </a>
+                        <a class="side-letter" href="#"><p>마이페이지</p></a>
                     </li>
                 </ul>
             </div>
             <div id="logout">
-                <a class="side-img" href=""><img src="images/로그아웃-아이콘.svg" alt="마이페이지"></a>
+                <a class="side-img" href=""><img src="images/로그아웃-아이콘.svg" alt="로그아웃"></a>
                 <a class="side-letter" href=""><p style="color:#FF0A00">로그아웃</p></a>
             </div>
         </div>
@@ -50,7 +66,7 @@
     <div class="content-background">
         <div class="content-container">
             <main>
-    
+
             </main>
             <footer>
                 <ul>
@@ -69,13 +85,26 @@
         sideClick.addEventListener("click", () => {
             sidebar.classList.toggle("fold");
             
-            if(document.querySelector(".fold") === null){
+            if (document.querySelector(".fold") === null) {
                 sidebar.style.width = "242px";
                 sideClick.innerHTML = '<img src="images/사이드바닫힘.png" alt="사이드바닫힘">';
             } else {
                 sidebar.style.width = "92px";
                 sideClick.innerHTML = '<img src="images/사이드바열림.png" alt="사이드바열림">';
             }
+        });
+
+        // 메뉴 아이콘 호버 효과
+        const sideButtons = document.querySelectorAll('#side-buttons li');
+        sideButtons.forEach(button => {
+            const originalImage = button.querySelector('img').src;
+            const hoverImage = button.querySelector('a.side-img').getAttribute('data-hover-image');
+            button.addEventListener('mouseenter', () => {
+                button.querySelector('img').src = hoverImage;
+            });
+            button.addEventListener('mouseleave', () => {
+                button.querySelector('img').src = originalImage;
+            });
         });
     </script>
 </body>
