@@ -196,6 +196,7 @@ footer li{
 
 p {
     white-space: nowrap;
+    margin: 0;
 }
 
 /*--------------------토스트----------------------*/
@@ -209,3 +210,6 @@ p {
     --bs-success: #000000; /* 원하는 색상 코드 */
     --bs-tooltip-bg: var(--bs-success);
 }
+
+
+

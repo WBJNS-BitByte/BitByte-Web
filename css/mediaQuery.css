@@ -9,7 +9,7 @@
         height: 686px;
     }
 
-    .content-background{
+    nav, .content-background{
         min-width: 1440px;
         max-width: 1440px;
     }
