@@ -12,15 +12,70 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
-        /* 스크롤바 숨기기 */
-        /* body {
-            -ms-overflow-style: none;
+        /* 자리 선택 섹션 스타일 */
+        .seat-grid {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr); /* 14칸짜리 그리드 */
+            gap: 10px; /* 그리드 간의 간격 */
+            justify-items: center;
+            align-items: center;
+            margin-top: 20px;
+}
+
+
+        .seat-table {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
         }
 
-        body::-webkit-scrollbar {
-            display: none;
-        } */
+        .seat-button {
+            width: 45px;
+            height: 45px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
+        .seat-button:hover {
+            background-color: #d9d9d9;
+        }
+
+        .seat-button.selected {
+            background-color: #4c6ef5;
+            color: white;
+        }
+
+        .placeholder {
+            grid-column: span 2;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #cccccc;
+            border-radius: 5px;
+            color: #777;
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        .seat-table .placeholder {
+            grid-column: span 3; /* 강의실을 포함한 칸을 넓게 만듦 */
+        }
     </style>
 </head>
 <body>
@@ -123,11 +178,91 @@
 
                 <section id="seat-selection" class="hidden"> <!-- 기본적으로 숨김 처리 -->
                     <h4>자리 선택</h4>
-                    <div class="button-group">
-                        <button class="seat-button">1</button>
-                        <button class="seat-button">2</button>
-                        <!-- 자리 버튼들 추가 -->
-                    </div>
+                        <div class="seat-grid">
+                                <!-- 첫 번째 줄 -->
+                            <button class="seat-button">2</button>
+                            <button class="seat-button">3</button>
+                            <button class="seat-button">4</button>
+                            <button class="seat-button">5</button>
+                            <button class="seat-button">6</button>
+                            <button class="seat-button">7</button>
+                            <div class="seat-placeholder" style="grid-column: span 2;">강의실</div>
+                            <button class="seat-button">20</button>
+                            <button class="seat-button">21</button>
+                            <button class="seat-button">22</button>
+                            <button class="seat-button">18</button>
+                            <button class="seat-button">19</button>
+
+                            <!-- 두 번째 줄 -->
+                            <button class="seat-button">9</button>
+                            <button class="seat-button">10</button>
+                            <button class="seat-button">11</button>
+                            <button class="seat-button">12</button>
+                            <button class="seat-button">13</button>
+                            <button class="seat-button">14</button>
+                            <div class="seat-placeholder" style="grid-column: span 2;"></div>
+                            <button class="seat-button">25</button>
+                            <button class="seat-button">26</button>
+                            <button class="seat-button">27</button>
+                            <button class="seat-button">28</button>
+                            <button class="seat-button">29</button>
+
+                            <!-- 세 번째 줄 -->
+                            <button class="seat-button">2</button>
+                            <button class="seat-button">3</button>
+                            <button class="seat-button">4</button>
+                            <button class="seat-button">5</button>
+                            <div class="seat-placeholder" style="grid-column: span 3;">전자레인지</div>
+                            <div class="seat-placeholder" style="grid-column: span 3;">엘리베이터</div>
+                            <button class="seat-button">17</button>
+                            <button class="seat-button">18</button>
+                            <button class="seat-button">19</button>
+                            <button class="seat-button">20</button>
+                            <button class="seat-button">21</button>
+                            <button class="seat-button">22</button>
+
+                            <!-- 네 번째 줄 -->
+                            <div class="seat-placeholder" style="grid-column: span 3;"></div>
+                            <button class="seat-button">24</button>
+                            <button class="seat-button">25</button>
+                            <button class="seat-button">26</button>
+                            <button class="seat-button">27</button>
+                            <button class="seat-button">28</button>
+                            <button class="seat-button">29</button>
+                            <div class="seat-placeholder" style="grid-column: span 5;"></div>
+
+                            <!-- 다섯 번째 줄 -->
+                            <button class="seat-button">1</button>
+                            <button class="seat-button">2</button>
+                            <button class="seat-button">3</button>
+                            <button class="seat-button">4</button>
+                            <button class="seat-button">5</button>
+                            <button class="seat-button">6</button>
+                            <button class="seat-button">7</button>
+                            <button class="seat-button">8</button>
+                            <button class="seat-button">9</button>
+                            <button class="seat-button">10</button>
+                            <button class="seat-button">11</button>
+                            <button class="seat-button">12</button>
+                            <button class="seat-button">13</button>
+                            <button class="seat-button">14</button>
+
+                            <!-- 여섯 번째 줄 -->
+                            <button class="seat-button">15</button>
+                            <button class="seat-button">16</button>
+                            <button class="seat-button">17</button>
+                            <button class="seat-button">18</button>
+                            <button class="seat-button">19</button>
+                            <button class="seat-button">20</button>
+                            <button class="seat-button">21</button>
+                            <button class="seat-button">22</button>
+                            <button class="seat-button">23</button>
+                            <button class="seat-button">24</button>
+                            <button class="seat-button">25</button>
+                            <button class="seat-button">26</button>
+                            <button class="seat-button">27</button>
+                            <button class="seat-button">28</button>
+                        </div>
                 </section>
 
                 <section id="rules" class="hidden">
@@ -141,7 +276,7 @@
                 </section>
 
                 <section id="reserve-section">
-                    <button id="reserve-btn"><a href="reservation.html">예약하기</a></button>
+                    <button id="reserve-btn"><a href="reservationCheck.html">예약하기</a></button>
                 </section>
             </main>
             <footer>
