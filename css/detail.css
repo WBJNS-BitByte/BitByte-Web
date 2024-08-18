@@ -1,0 +1,118 @@
+/* Community Detail 페이지의 스타일 */
+
+/* 전체 컨테이너 */
+.content-container {
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* 배경색 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 박스 그림자 */
+}
+
+/* 페이지 제목 (Community Detail) */
+.detail-header h2 {
+    font-weight: 700; /* 굵게 */
+    color: #1d68a7; /* 커뮤니티 리스트에 있던 색상 */
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #1d68a7;
+}
+
+/* 게시글 제목 박스 */
+.detail-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600; /* 덜 굵게 */
+    margin-bottom: 1rem;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 작성자, 작성일, 조회수의 박스 */
+.post-detail {
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-author {
+    flex-grow: 1;
+}
+
+.post-meta {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.detail-content .post-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* 작성자 정보 */
+.detail-content .post-info p {
+    font-weight: 500; /* 중간 굵기 */
+}
+
+/* 작성일과 조회수 정보 */
+.detail-content .post-meta {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 400; /* 일반 굵기 */
+}
+
+.detail-content .post-meta span {
+    margin-left: 1rem;
+}
+
+/* 게시글 본문 박스 */
+#post-body {
+    margin-top: 1rem;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 300; /* 더 얇게 */
+}
+
+/* 파일 첨부 섹션 */
+.file-attachment {
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 400; /* 일반 굵기 */
+}
+
+/* 구분선 스타일 */
+.detail-content hr {
+    margin: 1.5rem 0;
+    border: none;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* 목록으로 돌아가기 버튼 박스 */
+.detail-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.detail-footer .btn {
+    padding: 0.5rem 2rem;
+    font-weight: 600; /* 덜 굵게 */
+    background-color: #1d68a7;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
