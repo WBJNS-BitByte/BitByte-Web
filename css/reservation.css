@@ -63,3 +63,113 @@ section h4 {
     color: white;
     font-weight: bold;
 }
+
+/*자리관련*/
+.rd_graybox {
+    background-color: #EAEAEA;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    gap: 1em;
+}
+
+.rd_whitebox {
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    border: 1px solid #9E9E9E;
+    border-radius: 10px;
+    gap: 1em;
+}
+
+.rd_gridbox2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.rd_gridbox4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.rd_gridbox8 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.rd_gridbox12 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.rd_reservation_status {
+    display: flex;
+    flex-direction: column;
+}
+
+.rd_reservation_status_first_row {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+}
+
+.rd_reservation_status_second_row {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+}
+
+.rd_reservation_status_third_row {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+}
+
+#rd_reservation_status_text1 {
+    width: 4em;
+    height: 1.7em;
+    text-align: center;
+}
+
+#rd_reservation_status_text1 p {
+    margin-bottom: 0;
+}
+
+#rd_reservation_status_text1 {
+    width: 4em;
+    height: 1.7em;
+    text-align: center;
+}
+
+#rd_reservation_status_text2 {
+    width: 9em;
+    height: 1.7em;
+    text-align: center;
+}
+
+#rd_reservation_status_text3 {
+    width: 9em;
+    height: 1.7em;
+    text-align: center;
+}
+
+#rd_reservation_status_blank1 {
+    background-color: transparent;
+    padding: 2em;
+}
+
+#rd_reservation_status_blank2 {
+    background-color: transparent;
+    padding: 1.9em;
+}
+
+.rd_reservation_status_text_box {
+    display: flex;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.rd_reservation_status {
+    gap: 2em;
+    margin-top: 20px;
+}
