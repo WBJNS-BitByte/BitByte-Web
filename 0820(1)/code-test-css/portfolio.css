@@ -1,0 +1,409 @@
+/* 프로필 상세 스타일 */
+.profile-page-detail {
+    margin-top: 2vh;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    overflow: hidden;
+}
+.profile-img-box {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #E6E6E6;
+    border-radius: 5%;
+    overflow: hidden;
+}
+#profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-content {
+    margin-left: 5%;
+    width: 60%;
+}
+#profile-user-affiliation {
+    font-size: 1.25em;
+    font-weight: bold;
+    width: 100%;
+    height: 3vh;
+    color: #343B8C;
+    text-align: left;
+    align-items: center;
+}
+.name-userId-box {
+    width:  85%;
+    height: 5vh;
+    margin-top: 1vh;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#name-box {
+    width: 10vw;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#userId-box {
+    width: 20vw;
+    height: 80%;
+    font-size: 1.5rem;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 포트폴리오 스타일 */
+.portfolio-box {
+    width: 75vw;
+    height: 54.5%;
+    margin-top: 0.5vh;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-btn-box {
+    width: 89.5%;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+}
+.portfolio-btn-box button {
+    text-align: center;
+    background-color: none;
+    outline: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: gray;
+    border: none;
+    background-color: white;
+    text-wrap: nowrap;
+    transition: transform 0.3s;
+}
+.portfolio-btn-box button:hover {
+    color: #343B8C;
+    transform: scale(1.1);
+}
+.portfolio-btn-box img {
+    background-color: none;
+    width: 2vh;
+    height: 2vh;
+    outline: none;
+    border: none;
+    transition: transform 0.3s;
+}
+#portfolio-delete {
+    margin-left: 68vw;
+}
+#portfolio-write {
+    margin-left: 1.5vw;
+}
+#portfolio-write:hover {
+    transform: scale(1.2);
+}
+#portfolio-delete:hover {
+    content: url('../img/trash_hover.svg');
+    transform: scale(1.2);
+}
+.portfolio-list-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5vw;
+}
+.portfolio-list-item {
+    flex: 0 0 14.6vw;
+    height: 85%;
+    background-color: #E6E6E6;
+    border-radius: 3%;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-list-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+input[type="checkbox"]:checked {
+    background-color: #343B8C;
+}
+#portfolio-list-title { 
+    position: absolute;
+    bottom: 5vh;
+    left: 0.5vw;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 0.3em;
+    padding: 0 0.3em;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+/* view 모달 스타일 */
+.view-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.view-modal-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80vw;
+    height: 90vh;
+    text-align: center;
+    padding: 2vh 2vh;
+}
+.view-modal-img-box,
+.view-modal-text-box {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    text-align: left;
+}
+.view-modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+#view-img-upload {
+    width: 8vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color: gray;
+    color: white;
+    position: absolute;
+    bottom: 10vh;
+    left: 40vw;
+    font-size: 1em;
+    font-weight: bold;
+    display: none;
+}
+#view-modal-title {
+    width: 100%;
+    height: 2em;
+    padding: 0.25em;
+    overflow: hidden;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 1vw;
+    outline: none;
+    border: none;
+    resize: none;
+}
+#view-modal-title:focus {
+    outline: none;
+    background-color: white;
+}
+#view-modal-subtitle {
+    margin-top: 2vh;
+    width: 100%;
+    height: 1.5em;
+    overflow: hidden;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-left: 1vw;
+    outline: none;
+    resize: none;
+    border: none;
+}
+#view-modal-objective {
+    margin-top: 2vh;
+    width: 100%;
+    height: 1.5rem;
+    padding-top: 0.1rem;
+    overflow: hidden;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 1vw;
+    outline: none;
+    resize: none;
+    border: none;
+}
+#view-modal-content {
+    width: 100%;
+    height: 63vh;
+    margin-top: 2vh;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 1vw;
+    overflow-y: auto;
+    outline: none;
+    resize: none;
+    border: none;
+}
+#view-edit {
+    margin-left: 36vw;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#view-edit:hover {
+    color: white;
+    background-color: #343B8C;
+}
+
+/* write 모달 스타일 */
+.write-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.write-modal-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80vw;
+    height: 90vh;
+    text-align: center;
+    padding: 2vh 2vh;
+}
+.write-modal-img-box,
+.write-modal-text-box {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    text-align: left;
+}
+.write-modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+#write-img-upload {
+    width: 8vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color: gray;
+    color: white;
+    position: absolute;
+    bottom: 10vh;
+    left: 40vw;
+    font-size: 1em;
+    font-weight: bold;
+}
+#write-modal-title {
+    width: 100%;
+    height: 2em;
+    padding: 0.25em;
+    overflow: hidden;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 1vw;
+    outline: none;
+    border: none;
+    resize: none;
+}
+#write-modal-title:focus {
+    outline: none;
+    background-color: white;
+}
+#write-modal-subtitle {
+    margin-top: 2vh;
+    width: 100%;
+    height: 1.5em;
+    overflow: hidden;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-left: 1vw;
+    outline: none;
+    resize: none;
+    border: none;
+
+}
+#write-modal-objective {
+    margin-top: 2vh;
+    width: 100%;
+    height: 1.5rem;
+    padding-top: 0.1rem;
+    overflow: hidden;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 1vw;
+    outline: none;
+    resize: none;
+    border: none;
+}
+#write-modal-content {
+    width: 100%;
+    height: 63vh;
+    margin-top: 2vh;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 1vw;
+    overflow-y: auto;
+    outline: none;
+    resize: none;
+    border: none;
+}
+#write-save {
+    margin-left: 36vw;
+    width: 3vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#write-save:hover {
+    color: white;
+    background-color: #343B8C;
+}
