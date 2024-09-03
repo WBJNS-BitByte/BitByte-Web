@@ -171,6 +171,17 @@
                 button.querySelector('img').src = originalImage;
             });
         });
+
+        <!-- const addBtn = document.querySelector(".add-user button"); -->
+        let http = `<div class="add-user">
+                            <input type="text" name="user-name" id="user-name" placeholder="이름">
+                            <input type="text" name="user-id" id="user-id" placeholder="아이디">
+                            <button type="button">추가</button>
+                        </div>`;
+
+        $(".add-user button").on("click", (e) => {
+            $("#share-people").append(http);
+        })
     </script>
 </body>
 </html>
