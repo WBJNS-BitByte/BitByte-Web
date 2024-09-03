@@ -1,0 +1,17 @@
+@media screen and (min-width: 1440px){
+    .content-container {
+        width: 61.11%
+    }
+}
+
+@media screen and (max-width: 1440px){
+    aside {
+        height: 686px;
+    }
+
+    .content-background{
+        min-width: 1440px;
+        max-width: 1440px;
+    }
+
+}
