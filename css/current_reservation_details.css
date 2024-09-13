@@ -1,4 +1,17 @@
+.rd_contents_box {
+    max-width: 1050px;
+}
+
+.rd_header h2 {
+    font-size: 32px;
+    color: #343B8C;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
 .rd_rd_reservation_status_total {
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
 }
 
@@ -6,11 +19,6 @@
     gap: 2em;
 }
 
-.rd_header h2 {
-    color: #343B8C;
-    font-weight: bold;
-    margin-top: 2em;
-}
 
 .rd_reservation_status div h4 {
     font-size: 20px;
@@ -64,18 +72,21 @@
     display: flex;
     flex: 1;
     gap: 1em;
+    justify-content: center;
 }
 
 .rd_reservation_status_second_row {
     display: flex;
     flex: 1;
     gap: 1em;
+    justify-content: center;
 }
 
 .rd_reservation_status_third_row {
     display: flex;
     flex: 1;
     gap: 1em;
+    justify-content: center;
 }
 
 #rd_reservation_status_text1 {
@@ -120,6 +131,44 @@
     display: flex;
     align-items: flex-end;
     gap: 2em;
+}
+
+.rd_reservation_contents {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    max-width: 980px;
+}
+
+.rd_reservation_contents h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rd_underline {
+    border-bottom: 1px solid black;
+    margin-bottom: 3em;
+    max-width: 1020px;
+}
+
+.rd_caution {
+    padding: 0 1em;
+    margin-bottom: 3em;
+    max-width: 1020px;
+}
+
+.rd_caution div h5 {
+    margin-bottom: 1em;
+}
+
+#rd_caution_contents {
+    padding-left: 0;
+}
+
+#rd_caution_contents li {
+    margin-bottom: 1em;
 }
 
 

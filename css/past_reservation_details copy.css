@@ -1,0 +1,74 @@
+.rd_borderbox {
+    border: 2px solid #A9A9A9;
+    border-radius: 20px;
+    height: 740px;
+}
+
+.rd_Favorites_icon {
+    display: flex;
+    justify-content: end;
+    margin: 1em;
+}
+
+.rd_Favorites_icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.rd_reservation_info_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.rd_reservation_info_box button[type='button'] {
+    background-color: transparent;
+    border: none;
+}
+
+.rd_reservation_info {
+    text-align: center;
+}
+
+.rd_reservation_info div h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.rd_reservation_info div p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#rd_past_reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.rd_qr_text_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.rd_qr_text_box div button[type='button'] {
+    background-color: #DBDBDB;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4F4E4E;
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rd_qr_text_box div button[type='button']:hover {
+    background-color: #343B8C;
+    color: white;
+}
